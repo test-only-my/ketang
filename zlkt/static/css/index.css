@@ -1,0 +1,9 @@
+body{
+    background-color: #f3f3f3;
+}
+.info_body{
+    width: 730px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
