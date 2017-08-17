@@ -1,6 +1,6 @@
 # encoding:utf-8
 from flask import Flask
-from zlkt import app
+
 
 
 debug = True
@@ -15,4 +15,5 @@ HOST = '127.0.0.1'
 PORT = 3306
 DATABASE = 'zlkt'
 SQLALCHEMY_DATABASE_URI = 'mysql+{}://{}:{}@{}:{}/{}'.format(DRIVER,USERNAME,PASSWORD,HOST,PORT,DATABASE)
-
+# 避免警告:设置成 True，SQLAlchemy 将会追踪对象的修改并且发送信号。这需要额外的内存， 如果不必要的可以禁用它。
+SQLALCHEMY_TRACK_MODIFICATIONS = True
