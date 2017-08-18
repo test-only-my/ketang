@@ -72,6 +72,9 @@ def if_login_processor():
             return {'user':user}
     return {}
 
+@app.route('/question')
+def question():
+    return render_template('question.html')
 
 if __name__ == '__main__':
     app.run()
